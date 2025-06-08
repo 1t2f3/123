@@ -1,113 +1,65 @@
 <!DOCTYPE html>
 <html lang="zh">
 <head>
-    <meta charset="UTF-8" />
-    <title>十大元帅标记图</title>
-    <style>
-        body {
-            text-align: center;
-            font-family: Arial, sans-serif;
-            background-color: #f5f5f5;
-            margin: 0;
-            padding: 20px;
-        }
-        .image-container {
-            position: relative;
-            display: inline-block;
-            margin: 20px auto;
-            box-shadow: 0 4px 8px rgba(0,0,0,0.3);
-            border-radius: 10px;
-            overflow: hidden;
-        }
-        .marker {
-            position: absolute;
-            width: 20px;
-            height: 20px;
-            background-color: red;
-            border-radius: 50%;
-            border: 2px solid white;
-            cursor: pointer;
-            transition: all 0.3s ease;
-            z-index: 10;
-        }
-        .marker:hover {
-            transform: scale(1.2);
-            background-color: #ff4444;
-        }
-        .tooltip {
-            position: absolute;
-            background-color: rgba(0, 0, 0, 0.85);
-            color: white;
-            padding: 8px 12px;
-            border-radius: 6px;
-            white-space: nowrap;
-            display: none;
-            font-size: 14px;
-            z-index: 20;
-            pointer-events: none;
-        }
-        .marker:hover + .tooltip {
-            display: block;
-        }
-        .description-area {
-            margin-top: 30px;
-            padding: 20px;
-            background-color: white;
-            border-radius: 10px;
-            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
-            max-width: 800px;
-            margin-left: auto;
-            margin-right: auto;
-        }
-        h1 {
-            color: #333;
-            margin-bottom: 10px;
-        }
-        h2 {
-            color: #666;
-            margin-bottom: 20px;
-        }
-    </style>
+  <meta charset="UTF-8" />
+  <title>人物标记图</title>
+  <style>
+    body {
+      text-align: center;
+      font-family: Arial, sans-serif;
+    }
+    .image-container {
+      position: relative;
+      display: inline-block;
+    }
+  .marker {
+      position: absolute;
+      width: 20px;
+      height: 20px;
+      background-color: blue;
+      border-radius: 50%;
+      border: 2px solid white;
+      cursor: pointer;
+    }
+    .tooltip {
+      position: absolute;
+      background-color: rgba(0, 0, 0, 0.75);
+      color: white;
+      padding: 8px;
+      border-radius: 6px;
+      white-space: nowrap;
+      display: none;
+      font-size: 14px;
+    }
+    .marker:hover + .tooltip {
+      display: block;
+    }
+  </style>
 </head>
 <body>
-    <h1>中华人民共和国元帅</h1>
-    <h2>点击红点查看元帅详细信息</h2>
-    
-    <div class="image-container">
-        <!-- 使用元帅合影图片 -->
-        <img src="元帅合影.jpg" alt="十大元帅合影" width="1000" />
-        
-        <!-- 标记点1：陈毅 -->
-        <a href="page-chenyi.html" class="marker" style="top: 150px; left: 150px;"></a>
-        <div class="tooltip" style="top: 170px; left: 180px;">陈毅</div>
-
-        <!-- 标记点2：贺龙 -->
-        <a href="page-helong.html" class="marker" style="top: 140px; left: 300px;"></a>
-        <div class="tooltip" style="top: 160px; left: 330px;">贺龙</div>
-        
-        <!-- 标记点3：聂荣臻 -->
-        <a href="page-nierongzhen.html" class="marker" style="top: 150px; left: 450px;"></a>
-        <div class="tooltip" style="top: 170px; left: 480px;">聂荣臻</div>
-        
-        <!-- 标记点4：罗荣桓 -->
-        <a href="page-luoronghuan.html" class="marker" style="top: 160px; left: 600px;"></a>
-        <div class="tooltip" style="top: 180px; left: 630px;">罗荣桓</div>
-        
-        <!-- 标记点5：叶剑英 -->
-        <a href="page-yejianying.html" class="marker" style="top: 160px; left: 750px;"></a>
-        <div class="tooltip" style="top: 180px; left: 780px;">叶剑英</div>
-        
-        <!-- 标记点6：徐向前 -->
-        <a href="page-xuxiangqian.html" class="marker" style="top: 150px; left: 850px;"></a>
-        <div class="tooltip" style="top: 170px; left: 880px;">徐向前</div>
-    </div>
-    
-    <!-- 文字说明区域 -->
-    <div class="description-area">
-        <h3>关于十大元帅</h3>
-        <p>本合影拍摄于 <strong>1955年9月27日</strong> 中华人民共和国首次授衔仪式期间。</p>
-        <p>本页面展示的是中华人民共和国元帅中的六位杰出代表：陈毅、贺龙、聂荣臻、罗荣桓、叶剑英、徐向前。</p>
-        <p>这六位元帅在中国革命和建设事业中都发挥了重要作用，为新中国的成立和发展做出了卓越贡献。</p>
-    </div>
+  <h2>点击蓝点查看人物信息</h2>
+  <div class="image-container">
+    <!-- 替换为你自己的图片文件名 -->
+    <img src="美国五总统.jpg" alt="人物合影" width="1000" />
+    <!-- 标记点1：老布什 -->
+    <a href="page-lao.html" class="marker" style="top: 15px; left: 140px;"></a>
+    <div class="tooltip" style="top: 40px; left: 150px;">老布什</div>
+    <!-- 标记点2：奥巴马 -->
+    <a href="page-ao.html" class="marker" style="top: 17px; left: 280px;"></a>
+    <div class="tooltip" style="top: 40px; left: 300px;">奥巴马</div>
+<!-- 标记点1：小布什 -->
+    <a href="page-xiao.html" class="marker" style="top: 25px; left: 400px;"></a>
+<div class="tooltip" style="top: 50px; left: 430px;">小布什</div>
+<!-- 标记点1：克林顿 -->
+    <a href="page-ke.html" class="marker" style="top: 10px; left: 620px;"></a>
+<div class="tooltip" style="top:19px; left: 650px;">克林顿</div>
+<!-- 标记点1：卡特 -->
+    <a href="page-ka.html" class="marker" style="top:45px; left: 840px;"></a>
+<div class="tooltip" style="top:70px; left: 860px;">卡特</div>
+  <!-- 你可以继续添加更多人物 -->
+<!-- 文字说明区域 -->
+   <div class="description-area">
+  <p>本合影拍摄于 <strong>2009年</strong>奥巴马当选总统当天</p>
+  </div>
 </body>
 </html>
